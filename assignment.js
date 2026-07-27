@@ -101,8 +101,10 @@ console.log(person("ziad", 18))
 // . Write a function that accepts multiple parameters (two or more) and returns their sum. (0.5 Grade) 
 // • Input Example: 1, 2, 3, 4, 5 
 // • Output Example: 15
-
-
+function sum(a, b, c, d, f) {
+    return (a + b + c + d + f)
+}
+console.log(sum(1, 2, 3, 4, 5))
 
 //  Write a function that returns a promise which resolves after 3 seconds with a 'Success' message. (0.5 Grade) 
 // • Output Example: “Success”
@@ -134,3 +136,31 @@ function splitIntoWords(str) {
     return str.split(" ");
 }
 console.log(splitIntoWords("The quick brown fox"));
+
+// What is the difference between forEach and for...of?
+
+//  What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples
+/**  hoisting: a variable declared after it has been used
+ * x=5;
+ *
+ *
+ *
+ *
+ *
+ *  let x=5
+    TGZ:a variable can be declared after it has been used
+        _________TDZ_
+        _________TDZ_
+        LET X=6
+*/
+// What are the main differences between == and ===?
+/**
+ * ==:5=6?
+ * ===:5=6 & THE same tybe?
+ */
+// Explain how try-catch works and why it is important in async operations.
+
+// What’s the difference between type conversion and coercion? Provide examples of each.
+/**conversion : the developer who do this
+coercion:java script engine
+*/
